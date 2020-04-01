@@ -9,21 +9,16 @@
   "author": "Jegor",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.0.1",
+    "autoprefixer": "^7.2.6",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1"
   },
   "dependencies": {
-    "gulp-uglifycss": "^1.1.0"
-  },
-  "browserslist": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "IE > 8",
-    "ios_saf > 10",
-    "and_chr > 78"
-  ]
+    "gulp-uglifycss": "^1.1.0",
+    "postcss-cli": "^7.1.0"
+  }
 }
