@@ -42,10 +42,6 @@
   border-top: 1px solid #cec590;
   border-bottom: 1px solid #bdb067;
 
-  &:first-child {
-    border-top: none;
-  }
-
   &:last-child {
     border-bottom: none;
   }
@@ -112,8 +108,7 @@
     transform: rotate(-45deg);
   }
 }
-
-@media (max-width: $xtra-small) {
+@media (max-width: $mobile-only) {
   .navigation--closed .navigation__item {
     display: none;
 
@@ -128,5 +123,29 @@
 
   .navigation--nojs .navigation__item {
     display: block;
+  }
+}
+
+@media (min-width: $small) {
+  .page-header {
+    width: 560px;
+  }
+}
+
+@media (min-width: $medium) {
+  .page-header {
+    width: 600px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__item {
+    border: none;
   }
 }

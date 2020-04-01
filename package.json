@@ -22,7 +22,7 @@
   "browserslist": [
     "last 1 chrome version",
     "last 1 firefox version",
-    "IE 11",
+    "IE > 8",
     "ios_saf > 10",
     "and_chr > 78"
   ]

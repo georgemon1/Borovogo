@@ -59,3 +59,36 @@
     left: 0;
   }
 }
+
+@media (min-width: $small) {
+  .page-main {
+    width: 550px;
+  }
+}
+
+@media (min-width: $medium) {
+  .page-main {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .product__list {
+    max-width: 620px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .product__item {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $large) {
+  .product__list {
+    max-width: 940px;
+  }
+}
