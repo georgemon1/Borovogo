@@ -1,0 +1,61 @@
+.page-main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product__image {
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+
+.product__title {
+  font-family: $exo2;
+  color: #000;
+  text-decoration-style: dotted;
+  line-height: 1.5rem;
+  max-width: 175px;
+  margin-bottom: 1.25em;
+
+  &--caps {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.product__category {
+  font-size: 0.8rem;
+  margin-bottom: 0.5em;
+}
+
+.product__description {
+  padding-right: 0.5em;
+
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+
+    background-image: url(../img/nav/bonfesto.png);
+    background-repeat: no-repeat;
+    background-size: 46px 16px;
+    background-position: center;
+
+    width: 72px;
+    height: 25px;
+
+    background-color: $green;
+
+    top: -10px;
+    left: 0;
+  }
+}

@@ -2,16 +2,16 @@
   font-weight: medium;
   font-family: 'Exo 2';
   font-style: normal;
-  src: url('fonts/Exo2-Medium.woff2') format('woff2'),
-    url('Exo2-Medium.woff') format('woff');
+  src: url('../fonts/Exo2-Medium.woff2') format('woff2'),
+    url('../fonts/Exo2-Medium.woff') format('woff');
 }
 
 @font-face {
   font-weight: normal;
   font-family: 'HelveticaNeue';
   font-style: normal;
-  src: url('fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
-    url('fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  src: url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
 }
 
 body {

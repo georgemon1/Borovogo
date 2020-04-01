@@ -14,10 +14,15 @@
   <body>
     <header class="page-header">
 
+      
       <h1 class="main-title">Представлен в брендах</h1>
+      
+      <nav class="navigation navigation--closed navigation--nojs">
 
-      <nav class="navigation">
+ 
+
           <ul class="navigation__list">
+            <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
             <li class="navigation__item">
               <a href="" class="navigation__link">
@@ -25,10 +30,10 @@
               </a>
             </li>
 
-            <li class="navigation__item">
-              <a href="" class="navigation__link">
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link navigation__link--active">
                 <img 
-                  src="img/nav/bonfesto.svg" 
+                  src="img/nav/bonfesto.png" 
                   alt="ссылка на продукты бонифесто"
                   class="navigation__icon">
               </a>
@@ -37,7 +42,7 @@
             <li class="navigation__item">
               <a href="" class="navigation__link">
                 <img 
-                  src="img/nav/villmonte.svg" 
+                  src="img/nav/villmonte.png" 
                   alt="ссылка на продукты вильмонте" 
                   class="navigation__icon">
               </a>
@@ -46,7 +51,7 @@
             <li class="navigation__item">
               <a href="" class="navigation__link">
                 <img 
-                  src="img/nav/cooking.svg" 
+                  src="img/nav/cooking.png" 
                   alt="ссылка на продукты кукинг" 
                   class="navigation__icon">
               </a>
@@ -64,26 +69,26 @@
 
         <ul class="product__list">
 
-          <li class="product__items">
+          <li class="product__item">
             <img src="img/tar_tar.jpg" alt="" class="product__image">
             <span class="product__category">Сыр мягкий</span>
-            <a href="" class="procut__title">
+            <a href="" class="product__title">
               <span class="product__title--caps">Кремчиз</span> тар-тар</a>
             <p class="product__description">Прекрасно заменяет классический французский соус из желтка, растительного масла и зеленого лука.</p>
           </li>
 
-          <li class="product__items">
+          <li class="product__item">
             <img src="img/hren.jpg" alt="" class="product__image">
             <span class="product__category">Сыр мягкий</span>
-            <a href="#" class="procut__title">
+            <a href="#" class="product__title">
               <span class="product__title--caps">Кремчиз</span> хрен</a>
             <p class="product__description">Хорош для бутербродов с рыбой или мясом. Можно добавлять в салаты для пикантного вкуса.</p>
           </li>
 
-          <li class="product__items">
+          <li class="product__item">
             <img src="img/neapolitano.jpg" alt="" class="product__image">
             <span class="product__category">Сыр мягкий</span>
-            <a href="#" class="procut__title">
+            <a href="#" class="product__title">
               <span class="product__title--caps">Кремчиз</span> неаполитанский</a>
             <p class="product__description">Идеален для курицы, отлично сочетается 
               с говядиной в блюдах средиземноморской кухни. </p>
@@ -92,6 +97,23 @@
 
       </section>
     </main>
+
+<script>
+    var navMain = document.querySelector('.navigation');
+  var navToggle = document.querySelector('.navigation__toggle');
+
+  navMain.classList.remove('navigation--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('navigation--closed')) {
+      navMain.classList.remove('navigation--closed');
+      navMain.classList.add('navigation--opened');
+    } else {
+      navMain.classList.add('navigation--closed');
+      navMain.classList.remove('navigation--opened');
+    }
+  });
+</script>
 
   </body>
 </html>
