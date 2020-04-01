@@ -158,7 +158,8 @@ img {
 .page-main,
 .product__list {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 3em; }
 
 .product__image {
   width: 100%;
