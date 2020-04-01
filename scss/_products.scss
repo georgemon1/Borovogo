@@ -1,4 +1,5 @@
-.page-main {
+.page-main,
+.product__list {
   width: 90%;
   margin: 0 auto;
 }
@@ -61,20 +62,21 @@
 }
 
 @media (min-width: $small) {
-  .page-main {
+  .page-main,
+  .product__list {
     width: 550px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $medium) {
-  .page-main {
-    width: auto;
+  .page-main,
+  .product__list {
+    width: 620px;
     margin: 0 auto;
   }
 
   .product__list {
-    max-width: 620px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -117,6 +119,12 @@
 }
 
 @media (min-width: $large) {
+  .page-main,
+  .product__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .product__list {
     max-width: 940px;
     grid-template-columns: 1fr 1fr 1fr;
